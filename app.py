@@ -212,7 +212,7 @@ if uploaded_file:
 
     # --- 3. 详细名单与下载 ---
     st.subheader("📋 疑似名单明细")
-    st.dataframe(scored_df[["账号""一卡通号", "总支出", "日均活跃支出", "疑似等级", "疑似经济困难得分"]].sort_values(
+    st.dataframe(scored_df[["账号","一卡通号", "总支出", "日均活跃支出", "疑似等级", "疑似经济困难得分"]].sort_values(
         "疑似经济困难得分", ascending=False))
 
     # 导出 CSV
